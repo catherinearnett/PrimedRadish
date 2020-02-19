@@ -2,8 +2,8 @@
     <head>
         <title>Primed Radish Experiment</title>
         <script src="jspsych-6.1.0/jspsych.js"></script>
-        <!-- <script src="jspsych-6.0.5/plugins/jspsych-html-keyboard-response.js"></script>
-        <script src="jspsych-6.0.5/plugins/jspsych-html-button-response.js"></script>
+        <script src="jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+        <!-- <script src="jspsych-6.0.5/plugins/jspsych-html-button-response.js"></script>
         <script src="jspsych-6.0.5/plugins/jspsych-audio-button-response.js"></script>
         <script src="jspsych-6.0.5/plugins/jspsych-survey-text.js"></script>
         <script src="jspsych-6.0.5/plugins/jspsych-call-function.js"></script> -->
@@ -41,9 +41,411 @@
 
     timeline = [];
 
+    var r1a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R1A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r2a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R2A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r3a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R3A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r4a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R4A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r5a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R5A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r6a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R6A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r7a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R7A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r8a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R8A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r9a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R9A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r10a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R10A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r11a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R11A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r12a1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R12A1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+
+    var targets = [r1a1, r2a1, r3a1, r4a1, r5a1, r6a1, r7a1, r8a1, r9a1, r10a1, r11a1, r12a1];
+
+    var r1a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R1A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r2a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R2A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r3a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R3A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r4a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R4A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r5a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R5A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r6a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R6A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r7a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R7A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r8a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R8A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r9a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R9A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r10a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R10A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r11a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R11A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r12a2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R12A2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+
+    var prime_2 = [r1a2, r2a2, r3a2, r4a2, r5a2, r6a2, r7a2, r8a2, r9a2, r10a2, r11a2, r12a2];
+
+    var r1a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R1A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r2a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R2A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r3a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R3A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r4a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R4A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r5a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R5A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r6a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R6A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r7a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R7A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r8a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R8A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r9a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R9A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r10a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R10A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r11a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R11A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r12a3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R12A3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+
+    var prime_3 = [r1a3, r2a3, r3a3, r4a3, r5a3, r6a3, r7a3, r8a3, r9a3, r10a3, r11a3, r12a3];
+
+    var r1f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R1F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r2f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R2F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r3f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R3F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r4f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R4F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r5f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R5F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r6f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R6F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r7f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R7F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r8f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R8F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r9f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R9F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r10f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R10F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r11f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R11F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var r12f1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>R12F1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+
+    var prime_fake = [r1f1, r2f1, r3f1, r4f1, r5f1, r6f1, r7f1, r8f1, r9f1, r10f1, r11f1, r12f1];
+
+    var filler1 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 1</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler2 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 2</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler3 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 3</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler4 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 4</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler5 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 5</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler6 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 6</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler7 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 7</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler8 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 8</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler9 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 9</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler10 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 10</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler11 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 11</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+    var filler12 = {
+    type: 'html-keyboard-response',
+    stimulus: '<p>Filler 12</p>',
+    choices: ['a', 'l'],
+    prompt: "<p>Question</p>"
+    };
+
+    var fillers = [filler1, filler2, filler3, filler4, filler5, filler6, filler7, filler8, filler9, filler10, filler11, filler12];
+
+    var NUMBER_OF_TARGETS = 12;
+
+    var shuffledFillers = jsPsych.randomization.shuffle(fillers);
+
+    var samplePrime2 = jsPsych.randomization.sampleWithoutReplacement(prime_2, 4);
+    var samplePrime3 = jsPsych.randomization.sampleWithoutReplacement(prime_3, 4);
+    var sampleFake = jsPsych.randomization.sampleWithoutReplacement(prime_fake, 4);
+
+    var primer = [];
+
+    for (i = 0; i < NUMBER_OF_TARGETS / 3; i++) {
+        primer.push(samplePrime2[i]);
+        primer.push(samplePrime3[i]);
+        primer.push(sampleFake[i]);
+    }
+    var primerShuffle = jsPsych.randomization.shuffle(primer);
+
+    var targetShuffle = jsPsych.randomization.shuffle(targets);
+
     timeline.push(welcome_message);
-    timeline.push(pic1);
-    timeline.push(pic2);
+
+    for (i = 0; i < NUMBER_OF_TARGETS; i++) {
+        timeline.push(shuffledFillers[i]);
+        timeline.push(primerShuffle[i]);
+        timeline.push(targetShuffle[i]);
+    }
+
+
+    // timeline.push(pic2);
+    // timeline.push(pic1);
 
     jsPsych.init({
         timeline: timeline
