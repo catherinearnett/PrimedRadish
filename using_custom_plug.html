@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Primed Radish Experiment</title>
+        <script src="jspsych-6.1.0/jspsych.js"></script>
+        <script src="jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+        <script src="double-image-keyboard-response.js"></script>
+        <!-- <script src="jspsych-6.0.5/plugins/jspsych-html-button-response.js"></script>
+        <script src="jspsych-6.0.5/plugins/jspsych-audio-button-response.js"></script>
+        <script src="jspsych-6.0.5/plugins/jspsych-survey-text.js"></script>
+        <script src="jspsych-6.0.5/plugins/jspsych-call-function.js"></script> -->
+        <script src="jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
+        <script src="jspsych-6.1.0/plugins/jspsych-instructions.js"></script>
+        <link href="jspsych-6.1.0/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    </head>
+    <body>
+    </body>
+    <script>
+
+    var welcome_message = {
+        type: 'instructions',
+        pages: ['Welcome to Primed Radish Experiment. Press \"Next\" to continue.'],
+        data: {'trial_category': 'welcome'},
+        show_clickable_nav: true
+    };
+
+    var couple1 = {
+    type: 'double-image-keyboard-response',
+    image1: 'IM1.png',
+    image2: 'IM2.jfif',
+    choices: ['1', '2'],
+    prompt: "<p>Which is Iron Man? 1 or 2?</p>",
+    response_ends_trial: true
+};
+
+    var couple2 = {
+    type: 'double-image-keyboard-response',
+    image2: 'IM1.png',
+    image1: 'IM2.jfif',
+    choices: ['1', '2'],
+    prompt: "<p>Which is Iron Man? 1 or 2?</p>",
+    response_ends_trial: true
+    };
+
+    timeline = [];
+
+    timeline.push(couple1);
+    timeline.push(couple2);
+
+    jsPsych.init({
+        timeline: timeline
+    });
+
+    </script>
+    </html>
