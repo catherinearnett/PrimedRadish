@@ -99,6 +99,7 @@ jsPsych.plugins["double-image-keyboard-response"] = (function() {
         html += 'height: auto; ';
       }
     }
+    html +='" hspace="50';
     html +='"></img>';
 
     html += '<img src="'+trial.image2+'" id="jspsych-double-image-keyboard-response-image2" style="';
@@ -114,6 +115,7 @@ jsPsych.plugins["double-image-keyboard-response"] = (function() {
         html += 'height: auto; ';
       }
     }
+    html +='"hspace="50';
     html +='"></img>';
 
     // add prompt
